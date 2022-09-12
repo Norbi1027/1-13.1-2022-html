@@ -1,0 +1,49 @@
+static void Main(string[] args)
+        {
+            Console.WriteLine("Gondoltam egy számra 1-100-ig, ki akarod találni mi az? Ha igen nyomj egy entert.");
+            Console.ReadLine();
+            Console.Clear();
+
+            Random rnd = new Random();
+            int gondoltszam = rnd.Next(1, 101);
+            bool kitalalta = false;
+            int tippek_szama = 0;
+
+            while (kitalalta == false)
+            {
+                Console.Clear();
+                Console.WriteLine("Írd be szerinted mi lehet a szám:");
+                int tipp = int.Parse(Console.ReadLine());
+                if (tipp < gondoltszam)
+                {
+                    tippek_szama++;
+                    Console.WriteLine("A gondolt szám ennél nagyobb.");
+                    System.Threading.Thread.Sleep(2000);
+                
+                }
+                else if (tipp > gondoltszam)
+                {
+                    tippek_szama++;
+                    Console.WriteLine("A gondolt szám ennél kisebb");
+                    System.Threading.Thread.Sleep(2000);
+                }
+                else if (tipp == gondoltszam)
+                {
+                    tippek_szama++;
+                    Console.WriteLine($"Gratulálok eltaláltad a számot!{tippek_szama}");
+                    System.Threading.Thread.Sleep(2000);
+                    kitalalta = true;
+
+                }
+                else
+                {
+                    tippek_szama++;
+                    Console.WriteLine("Mondtam 1-100-ig válassz számot.");
+                    System.Threading.Thread.Sleep(2000);
+                }          
+
+                System.Threading.Thread.Sleep(2000);
+            }
+
+
+        }
