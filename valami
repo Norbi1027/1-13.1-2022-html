@@ -1,0 +1,45 @@
+<!-- próba cseresznye -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kezdőlap</title>
+</head>
+<body>
+
+    <h1>belépés</h1>
+
+<form action="/action_page.php">
+  <label for="fname">Vezeték név:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Kereszt név:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Click the "Submit" button and the form-data will be sent to a page on the 
+server called "action_page.php".</p>
+
+<h1>fhkghfkhgf</h1>
+<p>jhhhlhhljlhkj.</p>
+
+<label for="cars">válassz egy kocsit</label>
+<select  name="cars" id="cars">
+  <optgroup label="svéd kocsi">
+    <option value="volvo">Volvo</option>
+    <option value="saab">saab</option>
+  </optgroup>
+  <optgroup label="Német kocsi">
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </optgroup>
+</select>
+<h1>hihi</h1>
+<h2>hihi</h2>
+<h3>hihi</h3>
+<h4>hihi</h4>
+<h5>hihi</h5>
+<h6>hihi</h6>
+
+</body>
+</html>
