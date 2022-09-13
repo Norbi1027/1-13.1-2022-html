@@ -4,6 +4,7 @@
 <html>
 <head>
 <title>Kezdőlap</title>
+<meta charset="UTF-8">
 </head>
 <body>
 
@@ -22,7 +23,18 @@ server called "action_page.php".</p>
 
 <h1>fhkghfkhgf</h1>
 <p>jhhhlhhljlhkj.</p>
+<style>
+  body {background-color: powderblue;}
+  h1   {color: blue;}
+  p    {color: red;}
 
+
+  </style>
+
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+<p></p>
 <label for="cars">válassz egy kocsit</label>
 <select  name="cars" id="cars">
   <optgroup label="svéd kocsi">
@@ -34,6 +46,12 @@ server called "action_page.php".</p>
     <option value="audi">Audi</option>
   </optgroup>
 </select>
+
+
+
+
+
+
 <h1>hihi</h1>
 <h2>hihi</h2>
 <h3>hihi</h3>
