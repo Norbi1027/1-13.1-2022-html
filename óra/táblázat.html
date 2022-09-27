@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="Author" content="Norbi">
+    <!-- abszolút elérési út -->
+    <!-- <link rel="stylesheet" href="H:\html\1-13.1-2022-html\óra\css\style.css"> -->
+    <!-- relatív elérési út -->
+    <link rel="stylesheet" href="css/style.css"> 
+
+ </head>
+
+<body>
+
+    <h1>Táblázat gyakorlás</h1>
+
+    <table>
+
+        <colgroup>
+        <col span="3">
+        <col span="2" id="kiemelt">
+        </colgroup>
+         <tr style="height:50%;">
+            <th> 1. oszlop</th>
+            <th colspan="2">2/3. oszlop</th>
+            <th>3.oszlop</th>
+            <th>4.oszlop</th>
+            <!-- <th>ötödik</th> -->
+        </tr>
+        <tr>
+            <td rowspan="2">1.sor</td>
+            <td>egy</td>
+            <td>kettő</td>
+            <td>három</td>
+            <td>négy</td>
+        </tr>
+        <tr>
+            <!-- <td>első</td> -->
+            <td>egy</td>
+            <td>kettő</td>
+            <td>három</td>
+            <td>négy</td>
+        </tr>
+
+        <tr>
+            <td>2.sor</td>
+            <td>egy</td>
+            <td>kettő</td>
+            <td>harom</td>
+            <td>négy</td>
+        </tr>
+
+    </table>
+    <div class="bekezdés">
+        <h2>1. bekezdés</h2>
+        <p>s Lorem ipsum dolor sit, amet <span class= fontos> consectetur </span> adipisicing elit. Eius non magnam cupiditate nam ipsam deleniti fuga cum ab deserunt. Assumenda id nobis est placeat nesciunt! Corrupti commodi recusandae aspernatur hic!</p>
+        <h2>2.bekezdés</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class = "fontos">Laboriosam</span> pariatur ipsa deserunt aliquid eveniet facere quisquam quia autem eligendi, magni sapiente nemo expedita voluptates, qui hic, vero reprehenderit. Quibusdam, repellat.</p>
+
+
+    </div>
+    <div>
+    <img src="kép/kutya.jpg" alt="kutya" title="ez egy kuta">
+    </div>
+  
+</body>
+</html>
