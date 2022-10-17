@@ -1,0 +1,34 @@
+body{
+  background-repeat: repeat-y;
+  background-position: left;
+  padding: 10px 40px 10px 110px;
+    background-image: url(sin.png);
+}
+
+p{
+    text-align: justify;
+}
+p:first-letter{
+  margin-left: 25px;
+}
+
+h1, h2{
+  font-variant: small-caps;
+}
+
+.kepek{
+    float: right;
+  width: 333px;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+#urlap{
+  border: 1px dotted gray;
+  border-radius: 20px;
+  text-align: center;
+  margin: 10px 100px;
+  padding: 10px;
+}
