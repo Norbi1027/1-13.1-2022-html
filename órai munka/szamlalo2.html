@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="images/gif">
+    <title>szamlalo2</title>
+    <style>
+        body{
+            counter-reset: h1_ct;
+        }
+        h1{
+            counter-reset: h2_ct; 
+        }
+        h1::before{
+            counter-increment: h1_ct;
+            counter: counter(h1_ct)".";
+        }
+        h2{
+        counter-reset: h3_ct;
+        }
+        h2:before{
+            counter-increment: h2_ct;
+            counter: counter(h2_ct)"." counter(h2_ct)".";
+        }
+        h3:before{
+            counter-increment: h1_ct;
+            counter: counter(h1_ct)"." counter(h2_ct)"."counter(h3_ct)".";
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Első színtű címsor</h1>
+    <h2>Második színtű címsor</h2>
+    <h3>Második színtű címsor</h2>
+    <h2>Második színtű címsor</h2>
+    <h3>Második színtű címsor</h2>
+    <h3>első színtű címsor</h2>
+    <h1>Második színtű címsor</h1>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>szamlalo</title>
+    <link rel="icon" type="image/gif" href="">
+    <style>
+        body{
+            counter-reset: szamlalo;
+        }
+        p:before {
+            counter-increment: szamlalo;
+            content: "bekezdés "counter(szamlalo) ". ";
+        }
+        
+    </style>
+</head>
+<body>
+    <p>A bekezés szövege...</p>
+    <p>A bekezés szövege...</p>
+    <p>A bekezés szövege...</p>
+    
+</body>
+</html>
