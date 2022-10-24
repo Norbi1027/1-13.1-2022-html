@@ -8,14 +8,15 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
 <!--[if gte mso 9]><xml>
 <mso:CustomDocumentProperties>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Kovács Attila Róbert</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Kovï¿½cs Attila Rï¿½bert</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
 <mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
 <mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Kovács Attila Róbert</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Kovï¿½cs Attila Rï¿½bert</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
 <mso:TriggerFlowInfo msdt:dt="string"></mso:TriggerFlowInfo>
 <mso:ContentTypeId msdt:dt="string">0x01010031B144843672234F8086692194B825C5</mso:ContentTypeId>
 <mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
@@ -25,18 +26,37 @@
 </head>
 <body>
 
-<div class="container-fluid">
-
-Web-fejlesztÃ©s
-Canvas
-Blog
-Wiki
-Tananyagok 
-
-HTML5/CSS3
-XHTML
-ArculattervezÃ©s
-Egyetemes tervezÃ©s
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Web-fejlesztÃ©s</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Canvas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Wiki</a>
+          </li>  
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Tananyagok</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">HTML/CSS3</a></li>
+              <li><a class="dropdown-item" href="#">XHTML</a></li>
+              <li><a class="dropdown-item" href="#">ArculattervezÃ©s</a></li>
+              <li><a class="dropdown-item" href="#">Egyetemes tervezÃ©s</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </div>
 
 </body>
