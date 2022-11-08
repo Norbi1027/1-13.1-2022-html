@@ -1,5 +1,4 @@
 import random
-
 a =random.randint(1,100)
 print("A szám",a)
 os =0
