@@ -1,0 +1,4 @@
+3 == 3 3 egyenlő 3-a
+3!=3 3 nem egyenlő 3-al
+3>=4 3 nagyobb vagy egyenlő mint 4
+not (3 <4) nem nagyobb 4 mint 3
