@@ -1,8 +1,7 @@
 
 class teszt:
     #1.feladat
-    def irany():
-        irany = input("Válassz egy égtájat! (é,k,d,ny)") 
+    def irany(irany):
         if irany == "é" and "É":
             print("Kelet")
         elif irany == "k" and "K":
@@ -13,10 +12,8 @@ class teszt:
             print("Észak")
         else:
             print("none")
-        return irany
     #2.feladat
-    def nap_nev():
-        nap = int(input("Adj meg egy napnak a számát(0-6-ig)"))
+    def nap_nev(nap):
         napok = ["hétfő","kedd","szerda","csütörtök","péntek","szombat","vasárnap"]
         if nap >=0:
             print(napok[nap])
@@ -113,12 +110,81 @@ class teszt:
         masodpercv = perv
         print(int(ora)," óra",int(perc),"perc",masodpercv,"másodperc")
 
-# teszt.irany()
-# teszt.nap_nev()
-# teszt.nap_szam()
-# teszt.nap_nyaralas()
-# teszt.nap_nyaralasminusz()
-# teszt.honap_nap()
-# teszt.masodperc_valtas()
-# teszt.masodperc_valtas2()
+    #11.feladat
+    def osszehasonlito():
+        a = int(input("Első szám: "))
+        b = int(input("masodik szám: "))
+
+        if a>b:
+            print("1")
+        elif a<b:
+            print("-1")
+        else:
+            print("0")
+    #12.feladat
+    def atfogo():
+        bef1 = int(input("1. befogó: "))
+        bef2 = int(input("2. befogó: "))
+        atfogo = ((bef1*bef1)+(bef2*bef2)) ** 0.5
+        print(atfogo)
+
+    #13.feladat
+    def meredekseg(x1,y1,x2,y2):
+        return (y1-y2)/(x1-x2)
+
+        print(meredekseg(5,3,4,2))
+        print(meredekseg(1,2,3,2))
+        print(meredekseg(1,2,3,3))
+        print(meredekseg(2,4,1,2))
+        print(meredekseg(1,6,3,12))
+    
+    #14.feladat
+    def paros_e(n):
+        if n%2 == 0: return True
+        else: return False
+    #15.feladat
+    def paratlan_e(n):
+        if n%2 !=0:
+            return True
+        else:
+            return False
+
+    #16.feladat
+    def tenyezo_e(t, n):
+        if n%t==0: return True
+        else: return False
+
+    #17.feladat
+    def tobbszorose_e(t, n):
+        if t%n==0:
+            return True
+        else:
+            return False
+
+    #18.feladat
+    def celsiusra_valtas(f):
+        return int(((f-32)/9)*5)
+
+    #19.feladat
+    def Fahrenheit_valtas(c):
+        return int(((c/5)*9)+32)
+
+
+teszt.irany("é")
+teszt.nap_nev(3)
+teszt.nap_szam()
+teszt.nap_nyaralas()
+teszt.nap_nyaralasminusz()
+teszt.honap_nap()
+teszt.masodperc_valtas()
+teszt.masodperc_valtas2()
 teszt.valtas()
+teszt.osszehasonlito()
+teszt.atfogo()
+teszt.meredekseg(5,3,4,2)
+print(teszt.paros_e(4))
+print(teszt.paratlan_e(3))
+print(teszt.tenyezo_e(3, 12))
+print(teszt.tobbszorose_e(12,3))
+print(teszt.celsiusra_valtas(212))
+print(teszt.Fahrenheit_valtas(0))
