@@ -1,8 +1,9 @@
-from teglalap import teglalap
+from teglalap import Téglalap
 
-t1 = teglalap()
-print("A t1 kerület: {0}","területe:{1}".format(t1.getkerulet(),t1.getterulet()))
+t1 = Téglalap()
+print("A t1 kerület: {0}, területe:{1}".format(t1.GetKerület(),t1.GetTerület()))
 
-t1.setA(12)
-t1.setB(56)
-print(f"A t1 kerület: {t1.getkerulet()},területe: {t1.getterulet()}")
+t1.SetA(12)
+t1.SetB(56)
+print(f"A t1 kerület: {t1.GetKerület()},területe: {t1.GetTerület()}")
+
