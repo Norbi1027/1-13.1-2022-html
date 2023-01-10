@@ -1,0 +1,21 @@
+12.11.2
+
+a:
+52
+
+ 
+
+b:
+Math.ceil(): a számot egész számra kerekíti, felfelé
+Math.floor(): a számot egész számra kerekíti, lefelé
+
+ 
+
+c:
+A Math.sqrt a szám négyzetgyökét számítja ki
+
+ 
+
+d:
+Pi 
+Sin
