@@ -1,0 +1,36 @@
+JDK -- Java Development
+JRE -- Runtime Environmert
+
+NetBeans-hez xampp-apache
+
+php:
+-- html szabványnak és szabályoknak megfelelő szövegfájlt hozunk létre
+
+összekötés:
+	<?php require_once './layout/head.php'; ?>
+bootstrap css:
+        <link href="./bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet"/>
+bootstrap js:
+    	<script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+tömb kiírása:
+    	print_r($_SESSION);
+
+Bejelentkezés nélkül nem engedd tovább:
+	if(!isset($_SESSION['login'])){$_SESSION['login']=false;}
+
+Mindig mappákba tároljuk
+
+NAMESPACE -- Könyvtárszerkezet
+
+Kriptográfiai hash-függvény:
+-- Bármilyen hosszúságú adatot adott hosszúságra képezhetünk le.
+
+adatbázis rész:
+Jelszó titkosítása: MD5-ös függvény (legrégebbi)
+
+adatbázis kezelők:
+mysqli 
+pdo 
+
+php mysqli -- objektum orientált programozási mód
+pdo -- akkor használjuk ha nem adatbázis specifikusan akarunk programozni
