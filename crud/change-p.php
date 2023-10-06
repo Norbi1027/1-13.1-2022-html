@@ -3,7 +3,7 @@ session_start();
 
 if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 
-    include "db_conn.php";
+    include "db_conn_login.php";
 
 if (isset($_POST['op']) && isset($_POST['np'])
     && isset($_POST['c_np'])) {
@@ -37,13 +37,13 @@ if (isset($_POST['op']) && isset($_POST['np'])
         $sql = "SELECT password
                 FROM users WHERE 
                 id='$id' AND password='$op'";
-        $result = mysqli_query($conn, $sql);
+        $result = mysqli_query($conn1, $sql);
         if(mysqli_num_rows($result) === 1){
         	
         	$sql_2 = "UPDATE users
         	          SET password='$np'
         	          WHERE id='$id'";
-        	mysqli_query($conn, $sql_2);
+        	mysqli_query($conn1, $sql_2);
         	header("Location: change-password.php?success=Your password has been changed successfully");
 	        exit();
 

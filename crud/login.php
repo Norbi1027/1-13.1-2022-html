@@ -12,6 +12,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 	}
 
 	$uname = validate($_POST['uname']);
+        //$pass=password_hash($_POST['password'],PASSWORD_DEFAULT);
 	$pass = validate($_POST['password']);
 
 	if (empty($uname)) {
@@ -24,9 +25,9 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 		$sql = "SELECT * FROM users WHERE user_name='$uname' AND password='$pass'";
 
 		$result = mysqli_query($conn1, $sql);
-                $row = mysqli_fetch_array($result);
+                //$row = mysqli_fetch_array($result);
                 
-                if ($row["usertype"]=="user") {
+              /*  if ($row["usertype"]=="user") {
                     header("location:userhome.php");
                 }
                 elseif($row["usertype"]=="admin"){
@@ -34,14 +35,16 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
                 }
                 else{
                 echo 'felhasználó vagy jelszó nem jó';
-                }
-		/*if (mysqli_num_rows($result) === 1) {
-			$row = mysqli_fetch_assoc($result);
+                }*/
+            
+		if (mysqli_num_rows($result) === 1) {
+			$row = mysqli_fetch_assoc($result);                        
             if ($row['user_name'] === $uname && $row['password'] === $pass) {
             	$_SESSION['user_name'] = $row['user_name'];
             	$_SESSION['name'] = $row['name'];
             	$_SESSION['id'] = $row['id'];
-            	header("Location: home.php");
+                $_SESSION['usertype'] =$row['usertype'];                
+                header("Location: home.php");
 		        exit();
             }
            
@@ -58,8 +61,8 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 }else{
 	header("Location: index.php");
 	exit(); 
-}*/
-        
-        }
 }
+  
 
+
+?>
